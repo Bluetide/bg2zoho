@@ -1,7 +1,7 @@
 import csv
 
-with open('MovimientoEst.txt', newline='',encoding='latin-1') as csvfile:
-  with open('bgzoho.csv', 'w+') as csvout:
+with open('data/MovimientoEst.txt', newline='',encoding='latin-1') as csvfile:
+  with open('data/bgzoho.csv', 'w+') as csvout:
     writer = csv.writer(csvout, lineterminator='\n')
     cs = csv.reader(csvfile, delimiter=';', quotechar='"')
     next(cs, None)  # skip the first row from the reader, the old header
